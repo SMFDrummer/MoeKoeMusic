@@ -57,6 +57,9 @@ jobs:
       - name: Run common build
         run: npm run build
 
+      - name: Run macOS API build
+        run: npm run build:api:macos
+
       - name: Run macOS build
         run: npm run electron:build -- --mac --x64
 
